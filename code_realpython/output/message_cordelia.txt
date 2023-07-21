@@ -1,0 +1,9 @@
+
+Hello Cordelia,
+
+I'm happy to inform you that you did very well on today's Python Challenge. You
+achieved 85 out of 100 points!
+
+See you tomorrow,
+
+Ms. Calendar

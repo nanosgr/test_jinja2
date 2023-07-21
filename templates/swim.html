@@ -1,0 +1,21 @@
+{# templates/swim.html #}
+
+{% extends "nav_base.html" %}
+{% import "macros.html" as my_macros %}
+
+{% block content %}
+  {{ super() }}
+
+  <h1> Razorbacks </h1>
+
+  <ul>
+    {% for swimmer in swimmers %}
+      {{ my_macros.swimmer_item(swimmer) }}
+    {% endfor %}
+  </ul>
+
+  {% set best = swimmers | map(attribute="speed") | max %}
+
+  <p> Best speed was: {{ best }} </p>
+
+{% endblock content %}

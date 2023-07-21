@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testeo templates Jinja2</title>
+        <link rel="shortcut icon" href="#" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Acá estamos</h1>
+        <hr>
+        {% import "shared/_controls.html" as controls %}
+        <!-- Ahora agregamos lo que necesitamos a partir de esta macro -->
+        <p>{{ controls.input(name=name, value=value) }}</p>
+        <p>{{ controls.input('password', type='password') }}</p>
+        
+        <hr>
+        
+        <ul>
+            {{ controls.algoMas(value='item 1', class='clase_01') }}
+            {{ controls.algoMas(value='item 2', class='clase_01') }}
+            {{ controls.algoMas(value='item 3', class='clase_01 clase_02') }}
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+$ lynx -dump --display_charset=utf-8 http://127.0.0.1:5000/swim/
+                           Welcome to Jenny's Server!
+
+   [1]home [2]course
+
+                                   Razorbacks
+
+     * Cameron 7
+     * Dodd 6
+     * Gage 8
+     * Xander 5
+
+   Best speed was: 8
+
+References
+
+   1. http://127.0.0.1:5000/
+   2. http://127.0.0.1:5000/course/

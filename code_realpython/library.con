@@ -1,0 +1,40 @@
+$ lynx -dump --display_charset=utf-8 http://127.0.0.1:5000/library/
+                           Welcome to Jenny's Server!
+
+   [1]home [2]course
+
+                                    Library
+
+Textbooks
+
+   Science, Math, Algebra
+   Music, Art, History
+   Gym
+
+Magic Books
+
+     * GRIM'S TRAPS
+     * Love spells
+     * exorcism
+     * There were 3 magic books
+     * Do you believe in magic? Exorcism, love spells, Grim's Traps
+     * Orderly books: ['love spells', "Grim's Traps", 'Exorcism']
+     * Shorter: Gri...
+     * Counting words: 6
+
+Other Books
+
+   No other books
+
+  Statements
+
+     * <a href="https://www.imdb.com/name/nm0372117/">Giles</a>
+     * [3]Giles
+     * %3Ca%20href%3D%22https%3A//www.imdb.com/name/nm0372117/%22%3EGiles%
+       3C/a%3E
+
+References
+
+   1. http://127.0.0.1:5000/
+   2. http://127.0.0.1:5000/course/
+   3. https://www.imdb.com/name/nm0372117/

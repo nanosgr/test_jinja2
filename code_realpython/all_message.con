@@ -1,0 +1,6 @@
+$ python all_message.py
+... wrote output/message_willow.txt
+... wrote output/message_cordelia.txt
+... wrote output/message_oz.txt
+... wrote output/message_buffy.txt
+... wrote output/message_xander.txt

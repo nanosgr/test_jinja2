@@ -1,0 +1,16 @@
+$ lynx -dump --display_charset=utf-8 http://127.0.0.1:5000/tara/
+                           Welcome to Jenny's Server!
+
+   [1]home [2]course
+
+                                  Tara Maclay
+
+   Tara was a good witch and girlfriend of Willow until she was killed by
+   Warren and made Willow go all dark and broody.
+   [3]Shoot Tara
+
+References
+
+   1. http://127.0.0.1:5000/
+   2. http://127.0.0.1:5000/course/
+   3. http://127.0.0.1:5000/tara/?mode=dark

@@ -1,0 +1,8 @@
+$ lynx -dump --display_charset=utf-8 http://127.0.0.1:5000/course/
+                        Python Challenge: Jenny's Server
+
+     * 😁 Willow: 100 / 100
+     * 😁 Cordelia: 85 / 100
+     * 😁 Oz: 95 / 100
+     * 👿 Buffy: 65 / 100
+     * 👿 Xander: 45 / 100

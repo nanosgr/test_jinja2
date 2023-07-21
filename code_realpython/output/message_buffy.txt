@@ -1,0 +1,12 @@
+
+Hello Buffy,
+
+
+Your score on today's test Python Challenge could have been better. More
+studying, less vampire hunting!
+
+You achieved 65 out of 100 points!
+
+See you tomorrow,
+
+Ms. Calendar

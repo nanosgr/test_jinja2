@@ -1,0 +1,25 @@
+{# templates/macros.html #}
+
+{% macro light_or_dark_mode(element) %}
+  {% if request.args.get('mode') == "dark" %}
+    <a href="{{ request.path }}"> Save Tara </a>
+    <style>
+      {{ element }} {
+        background-color: #212F3C;
+        color: #FFFFF0;
+      }
+      {{ element }} a {
+        color: #00BFFF !important;
+      }
+    </style>
+  {% else %}
+    <a href="{{ request.path }}?mode=dark"> Shoot Tara </a>
+  {% endif %}
+
+{% endmacro %}
+
+{% macro swimmer_item(swimmer) %}
+<li>
+  <b> {{ swimmer.name }} </b> {{ swimmer.speed }}
+</li>
+{% endmacro %}

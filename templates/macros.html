@@ -1,0 +1,19 @@
+{# templates/macros.html #}
+
+{% macro light_or_dark_mode(element) %}
+  {% if mode == "dark" %}
+    <a href="{{ path }}"> Save Tara </a>
+    <style>
+
+    </style>
+  {% else %}
+    <a href="{{ path }}?mode=dark"> Shoot Tara </a>
+  {% endif %}
+
+{% endmacro %}
+
+{% macro swimmer_item(swimmer) %}
+<li>
+  <b> {{ swimmer.name }} </b> {{ swimmer.speed }}
+</li>
+{% endmacro %}

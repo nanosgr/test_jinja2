@@ -1,0 +1,19 @@
+{# templates/tara.html #}
+
+{% extends "nav_base.html" %}
+{% import "macros.html" as my_macros %}
+
+{% block content %}
+  {{ super() }}
+
+  <h1> Tara Maclay </h1>
+
+  <p>
+    Tara was a good witch and girlfriend of Willow until she was killed by
+    Warren and made Willow go all dark and broody.
+  </p>
+
+  <footer>
+    {{ my_macros.light_or_dark_mode("body") }}
+  </footer>
+{% endblock content %}

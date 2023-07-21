@@ -1,0 +1,12 @@
+{# templates/shared/_controls.html #}
+
+{% macro input(name, value='', type='text', size=20) -%}
+<input type="{{ type }}" 
+    name="{{ name }}" 
+    value="{{value|e }}" 
+    size="{{ size }}"/>
+{%-  endmacro %}
+
+{% macro algoMas(value, class) -%}
+<li class="{{class}}">{{value}}</li>
+{%- endmacro%}

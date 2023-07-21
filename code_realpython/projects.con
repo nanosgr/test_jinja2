@@ -1,0 +1,15 @@
+$ lynx -dump --display_charset=utf-8 http://127.0.0.1:5000/projects/
+                           Welcome to Jenny's Server!
+
+   [1]home [2]course
+
+                                    Projects
+
+     * Computer stuff
+     * Witchcraft
+     * Dating Giles
+
+References
+
+   1. http://127.0.0.1:5000/
+   2. http://127.0.0.1:5000/course/

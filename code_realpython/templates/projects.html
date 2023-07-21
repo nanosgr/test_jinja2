@@ -1,0 +1,14 @@
+{# templates/projects.html #}
+{% extends "nav_base.html" %}
+
+{% block content %}
+{{ super() }}
+<h1> Projects </h1>
+
+<ul>
+{% for project in projects %}
+  <li>{{ project }} </li>
+{% endfor %}
+</ul>
+
+{% endblock content %}

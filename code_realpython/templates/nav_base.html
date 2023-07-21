@@ -1,0 +1,10 @@
+{# templates/nav_base.html #}
+{% extends "base.html" %}
+
+{% block content %}
+{{ super() }}
+<header>
+  {% include "nav.html" %}
+</header>
+
+{% endblock content %}

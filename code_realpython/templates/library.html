@@ -1,0 +1,42 @@
+{# templates/library.html #}
+{% extends "nav_base.html" %}
+
+{% block content %}
+{{ super() }}
+<h1> Library </h1>
+
+<h2> Textbooks </h2>
+
+{% for triplet in textbooks | batch(3) %}
+  {{ triplet|join(', ') }} <br/>
+
+{% endfor %}
+
+<h2> Magic Books </h2>
+
+{% set first_book = magicbooks | first | upper %}
+
+<ul>
+  <li> {{ first_book }} </li>
+  <li> {{ magicbooks.1 | capitalize }} </li>
+  <li> {{ magicbooks | last | lower }} </li>
+  <li> There were {{ magicbooks | length }} magic books </li>
+  <li> Do you believe in magic? {{ magicbooks | reverse | join(', ') }} </li>
+  <li> Orderly books: {{ magicbooks | sort(reverse=True) }} </li>
+  <li> Shorter: {{ magicbooks.0 | truncate(6) }} </li>
+  <li> Counting words: {{ magicbooks | join(' ') | wordcount }} </li>
+</ul>
+
+<h2> Other Books </h2>
+
+{{ other_books | default('No other books') }}
+
+<h3> Statements </h3>
+
+<ul>
+  <li> {{ statement }} </li>
+  <li> {{ statement | safe }} </li>
+  <li> {{ statement | urlencode }} </li>
+</ul>
+
+{% endblock content %}
